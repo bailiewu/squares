@@ -24,7 +24,13 @@ squares.forEach( square => {
   square.addEventListener('click', function(){
     const li = document.createElement('li');
     li.innerHTML = `you clicked on ${ this.id}`;
+    if (this.id.length < 1){
+        li.innerHTML = `you clicked on ${square.style.backgroundColor}`
+    }
     ul.appendChild(li);
+    // console.log(square.style.backgroundColor)
+    // console.log(getComputedStyle(square).backgroundColor) returns rgb color
+
   })
 });
 
