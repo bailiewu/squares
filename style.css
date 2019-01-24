@@ -1,0 +1,36 @@
+/* define squares */
+.square{
+    width : 50px;
+    height : 50px;
+    border : solid 1px black;
+    margin :0 10px 0 0;
+
+}
+
+.squareContainer{
+    display: flex;
+    justify-content: space-around
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: column
+}
+
+button{
+    background-color : cyan;
+    width: 100px;
+    margin: 0 auto
+}
+
+#red{
+    background-color: red
+}
+
+#green{
+    background-color: green
+}
+
+#blue{
+    background-color: blue
+}
