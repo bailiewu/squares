@@ -42,11 +42,29 @@ function generateDom(colorArr) {
     // square.className = 'square'
     // square.style.backgroundColor = 'red'
     // squareContainer.appendChild(square)
+
+    const buttonContainer = document.querySelector('.buttonContainer')
+
     colorArr.forEach(color => {
-    let square = document.createElement('div')
-    square.className = 'square'
-    square.style.backgroundColor = color
-    squareContainer.appendChild(square)
+        let square = document.createElement('div')
+        square.className = 'square'
+        square.innerHTML = color
+        square.style.backgroundColor = color
+        squareContainer.appendChild(square)
+
+        const button = document.createElement('button');
+        button.innerHTML = (`Toggle ${color}`)
+        button.style.backgroundColor = color
+        buttonContainer.append(button)
+
+        button.addEventListener('click',function(){
+            if (square.style.display === 'none'){
+                square.style.display = ''
+            }
+            else {
+                square.style.display = 'none'
+            }
+        })
     });
 
 }

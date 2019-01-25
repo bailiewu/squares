@@ -4,7 +4,7 @@
     height : 50px;
     border : solid 1px black;
     margin :0 10px 0 0;
-
+    border-radius: 10%;
 }
 
 .squareContainer{
@@ -18,8 +18,8 @@
 }
 
 button{
-    background-color : cyan;
-    width: 100px;
+    /* background-color : cyan; */
+    /* width: 100px; */
     margin: 0 auto
 }
 
